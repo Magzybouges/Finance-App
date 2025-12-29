@@ -130,7 +130,14 @@ const App: React.FC = () => {
         onExportFigma={() => alert('Figma export complete.')}
       >
         <Routes>
-          <Route path="/" element={<Dashboard income={income} expenses={expenses} subscriptions={subscriptions} loans={loans} investments={investments} />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <div>This is Margaret's Page Test</div>
+              </>
+            }
+          />
 
           <Route path="/accounts" element={
             <Accounts accounts={computedAccounts} income={income} expenses={expenses} onAddAccount={handleAddAccount} onUpdateAccount={handleUpdateAccount} onUploadStatement={handleUploadStatement} />
